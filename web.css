@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0004ff;
+}
+
+.logo img {
+    width: 48px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.content {
+    width: 50%;
+}
+
+
+
+.image img {
+    max-width: 100%;
+    height: 500px;
+}
+
+button {
+    background-color: #0003ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0004ff;
+}
+
+.profil {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.profil-item {
+    width: 45%;
+}
+
+.kurikulum {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.pengajar {
+    text-align: center;
+    padding: 80px 40px;
+    background-color: #00ff2aad;
+}
+
+.pengajar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pengajar-item {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pengajar-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.fasilitas {
+    padding: 50px 0;
+    width: 100%;
+    
+}
+
+.fasilitas h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    background-color: #00ff37e3
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.image-placeholder {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.description {
+    width: 65%;
+    font-size: 16px;
+    color: #333;
+    padding: 20px;
+}
+.contact {
+    padding: 40px 20px;
+    background-color: #0003ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 50%;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #409c15;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #0003ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #00f3cf;
+}
+
+.social-media {
+    width: 30%;
+    text-align: left;
+}
+
+.social-media h3 {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.social-media p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.social-media img {
+    justify-content: flex;
+    display: inline-block;
+    width: 25px;
+    height: auto;
+    margin: 0px 0px 25px 15px;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #08f308;
+}
